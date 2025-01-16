@@ -1,22 +1,15 @@
 {
-  "name": "banana",
-  "version": "1.0.0",
+  "packageManager": "bun@1.0.0",
   "devDependencies": {
-    "concurrently": "^9.0.1",
-    "dotenv-cli": "^7.4.2"
-  },
-  "private": true,
-  "scripts": {
-    "d": "dotenv -- concurrently 'bun run --filter api dev' 'bun run --filter client dev'",
-    "format": "bun run --filter '*' format",
-    "db:migrate": "dotenv -- bun run --filter api db:migrate",
-    "db:seed": "dotenv -- bun run --filter api db:seed",
-    "db:generate": "bun run --filter api db:generate",
-    "web:build": "bun run --filter client build",
-    "tunnel": "cloudflared tunnel --url http://localhost:3001"
+    "turbo": "^2.3.3"
   },
   "workspaces": [
-    "api",
-    "client"
-  ]
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "d": "turbo run dev --no-cache",
+    "dev": "turbo run dev --no-cache",
+    "build": "turbo run build"
+  }
 }
