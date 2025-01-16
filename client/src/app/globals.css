@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    /* Define the text-h1 class */
+    .text-h1 {
+        font-size: var(--font-size-h1);
+        line-height: var(--line-height-h1);
+        font-weight: bold;
+    }
+    /* Define the text-h2 class */
+    .text-h2 {
+        font-size: var(--font-size-h2);
+        line-height: var(--line-height-h2);
+        font-weight: bold;
+    }
+    /* Define the text-h3 class */
+    .text-h3 {
+        font-size: var(--font-size-h3);
+        line-height: var(--line-height-h3);
+        font-weight: bold;
+    }
+    /* Define the text-h4 class */
+    .text-h4 {
+        font-size: var(--font-size-h4);
+        line-height: var(--line-height-h4);
+        font-weight: bold;
+    }
+    /* Define the text-h5 class */
+    .text-h5 {
+        font-size: var(--font-size-h5);
+        line-height: var(--line-height-h5);
+        font-weight: bold;
+    }
+    /* Define the text-h6 class */
+    .text-h6 {
+        font-size: var(--font-size-h6);
+        line-height: var(--line-height-h6);
+        font-weight: bold;
+    }
+    /* Define the text-tiny class */
+    .text-tiny {
+        font-size: var(--font-size-tiny);
+        line-height: var(--line-height-tiny);
+    }
+    /* Define the text-body1 class */
+    .text-body1 {
+        font-size: var(--font-size-body1);
+        line-height: var(--line-height-body1);
+    }
+    /* Define the text-body2 class */
+    .text-body2 {
+        font-size: var(--font-size-body2);
+        line-height: var(--line-height-body2);
+    }
+    /* Define the text-body3 class */
+    .text-body3 {
+        font-size: var(--font-size-body3);
+        line-height: var(--line-height-body3);
+    }
+    /* Define the font-looped class */
+    .font-looped {
+        font-feature-settings: 'liga' off;
+    }
+    /* Define the font-normal class */
+    .font-normal {
+        font-weight: normal;
+    }
+    /* Define the font-bold class */
+    .font-bold {
+        font-weight: bold;
+    }
+}
+
+/* * {
+    outline: 1px solid red;
+    outline-offset: -1px;
+} */
+
+input[type='time']::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+@layer base {
+    :root {
+        /* Font Size */
+        --font-size-h1: 2.5rem;
+        --font-size-h2: 2rem;
+        --font-size-h3: 1.5rem;
+        --font-size-h4: 1.25rem;
+        --font-size-h5: 1rem;
+        --font-size-h6: 0.875rem;
+        --font-size-tiny: 0.75rem;
+        --font-size-body1: 1rem;
+        --font-size-body2: 0.875rem;
+        --font-size-body3: 0.75rem;
+
+        /* Line Height */
+        --line-height-h1: 3.5rem;
+        --line-height-h2: 2.75rem;
+        --line-height-h3: 2rem;
+        --line-height-h4: 1.65rem;
+        --line-height-h5: 1.5rem;
+        --line-height-h6: 1.25rem;
+        --line-height-tiny: 1.125rem;
+        --line-height-body1: 1.5rem;
+        --line-height-body2: 1.25rem;
+        --line-height-body3: 1.125rem;
+
+        --text-high: 0 0% 0%;
+        --text-medium: 218 23.5% 26.7%;
+        --text-light: 240 3.8% 46.1%;
+
+        --background-light: 240 4.8% 95.9%;
+        --background-medium: 0 0% 96%;
+        --background: 0 0% 98%;
+
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+
+        --primary: 84 77% 54%;
+        --primary-foreground: 0 0% 10%;
+
+        --secondary: 84 66% 93%;
+        --secondary-foreground: 84 77% 35%;
+
+        --muted: 84 66% 93%;
+        --muted-foreground: 240 3.8% 46.1%;
+
+        --accent: 84 66% 93%;
+        --accent-foreground: 84 77% 35%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        --border: 240 5% 90%;
+        --input: 240 5% 90%;
+
+        --ring: 84 77% 54%;
+
+        --chart-1: 36 76% 61%;
+        --chart-2: 133 58% 39%;
+        --chart-3: 195 50% 35%;
+        --chart-4: 60 74% 66%;
+        --chart-5: 27 87% 67%;
+
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
