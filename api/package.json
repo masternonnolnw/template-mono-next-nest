@@ -32,6 +32,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.0.12",
     "@prisma/client": "4.16.2",
+    "@scalar/nestjs-api-reference": "^0.3.174",
     "bcrypt": "^5.1.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
@@ -71,10 +72,6 @@
       "ts"
     ],
     "rootDir": "src",
-    "testRegex": ".*\\.spec\\.ts$",
-    "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
-    },
     "collectCoverageFrom": [
       "**/*.(t|j)s"
     ],
