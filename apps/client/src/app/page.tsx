@@ -11,7 +11,7 @@ const LandingPage = () => {
     })
     return (
         <div className="flex h-fit w-full flex-col px-[190px] py-[50px]">
-            <Typography variant="h1">banana</Typography>
+            <Typography variant="h1">herbarium</Typography>
             <Button>test</Button>
             <>{data?.body.message}</>
         </div>
