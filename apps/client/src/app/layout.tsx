@@ -8,8 +8,8 @@ import QueryProvider from '@/providers/query-provider'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'herbarium',
-    description: 'herbarium',
+    title: 'banana',
+    description: 'banana',
 }
 
 export default function RootLayout({

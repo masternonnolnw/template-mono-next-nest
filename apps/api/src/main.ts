@@ -29,9 +29,9 @@ async function bootstrap() {
 
   const document = generateOpenApi(helloContract, {
     info: {
-      title: 'herbarium API',
+      title: 'banana API',
       version: '1.0.0',
-      description: 'herbarium API',
+      description: 'banana API',
     },
   })
 
